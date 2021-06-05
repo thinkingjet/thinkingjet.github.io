@@ -69,6 +69,25 @@
 		   		<div class="col-twelve">
 
 		   			<div id="counter">
+						<div class="timer">
+							<div class="column">
+								<span id="days" />
+								<span class="type">Days</span>
+							</div>
+							<div class="column">
+								<span id="hours" />
+								<span class="type">Hours</span>
+							</div>
+							<div class="column">
+								<span id="minutes" />
+								<span class="type">Minutes</span>
+							</div>
+							<div class="column">
+								<span id="seconds" />
+								<span class="type">Seconds</span>
+							</div>
+							
+						</div>
 						<script>
 							// Set the date we're counting down to
 							var countDownDate = new Date("July 5, 2021 15:37:25").getTime();
@@ -87,10 +106,12 @@
 							  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 							  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 							  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-								
+							   
 							  // Output the result in an element with id="demo"
-							  document.getElementById("counter").innerHTML = days + "d " + hours + "h "
-							  + minutes + "m " + seconds + "s ";
+							  document.getElementById("days").innerHTML = days + "<sup>    days</sup>";
+							  document.getElementById("hours").innerHTML = hours + "<sup>   hours</sup>";
+							  document.getElementById("minutes").innerHTML = minutes + "<sup>   minutes</sup>";
+							  document.getElementById("seconds").innerHTML = seconds + "<sup>   seconds</sup>";
 								
 							  // If the count down is over, write some text 
 							  if (distance < 0) {
@@ -100,18 +121,18 @@
 							}, 1000);
 							</script>
 							
-		   				<div class="half">
+		   				<!-- <div class="half">
 		   					<span>25 <sup>days</sup></span> 
 		 						<span>23 <sup>hours</sup></span>
 		   				</div>
 							<div class="half">
 								<span>50 <sup>mins</sup></span>
 		 						<span>33 <sup>secs</sup></span>
-		 					</div> 
+		 					</div>  -->
 		   			</div>
 
 			  			<div class="bottom-text">
-			  				<h1>Website launching soon.</h1>
+			  				<h1>Website launching soon</h1>
 				  			<p>
 							Hey there, I am Gaurav. This website is still under construction. Till then, connect with me on social media.
 				  			</p>			  				
