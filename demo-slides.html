@@ -37,57 +37,110 @@
    ================================================== -->
    <header>
 
-   	<div class="row">
-   		<div class="logo">
-	         <a href="index.html">Khronos</a>
-	      </div> 
+	<div class="row">
+		<div class="logo">
+		<img src="images/logo.gif" alt="Gaurav" width="125"/>
+	   </div> 
 
-			<div class="social-links">
-			   <ul>
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-				   <li><a href="#"><i class="fa fa-pinterest"></i></a></li>				   
-				   <li><a href="#"><i class="fa fa-instagram"></i></a></li> 
-				   <li><a href="#"><i class="fa fa-dribbble"></i></a></li>				     			
-				</ul>
-			</div>
-   	</div> 
+		 <div class="social-links">
+			<ul>
+				 <li><a href="https://github.com/GauravRocketBooster" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a></li>
+				 <li><a href="https://www.linkedin.com/in/gauravjeet-singh-6968541b9/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="https://www.instagram.com/singh.gauravjeet/?hl=en" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a></li>				   
+				<li><a href="https://thinkingjet.000webhostapp.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-globe"></i></a></li> 
+				<li><a href="mailto: angad1411@gmail.com" target="_blank" ><i class="fa fa-envelope"></i></a></li>				     			
+				<!-- <li><a href="#"><i class="fa fa-envelope"></i></a></li>				     			 -->
+			 </ul>
+		 </div>
+	</div> 
 
-   </header> <!-- /header -->   
+</header> <!-- /header -->   
+
 
    <!-- home
    ================================================== -->
    <section id="home" class="home-slides">
 
-   	<div class="shadow-overlay"></div>
+   
+	<div class="shadow-overlay"></div>
 
-   	<div class="content-wrap-table">		   
+	<div class="content-wrap-table">		   
 
-		   <div class="main-content-tablecell">
+		<div class="main-content-tablecell">
 
-		   	<div class="row">
-		   		<div class="col-twelve">
+			<div class="row">
+				<div class="col-twelve">
 
-		   			<div id="counter">
-		   				<div class="half">
-		   					<span>334 <sup>days</sup></span> 
-		 						<span>23 <sup>hours</sup></span>
-		   				</div>
-							<div class="half">
-								<span>50 <sup>mins</sup></span>
-		 						<span>33 <sup>secs</sup></span>
-		 					</div> 
-		   			</div>
+					<div id="counter">
+					 <div class="timer">
+						 <div class="column">
+							 <span id="days" />
+							 <span class="type"></span>
+						 </div>
+						 <div class="column">
+							 <span id="hours" />
+							 <span class="type"></span>
+						 </div>
+						 <div class="column">
+							 <span id="minutes" />
+							 <span class="type"></span>
+						 </div>
+						 <div class="column">
+							<span id="seconds" />
+							 <span  class="type"></span>
+						 </div>
+						 
+					 </div>
+					 <script>
+						 // Set the date we're counting down to
+						 var countDownDate = new Date("August 1, 2021 15:37:25").getTime();
+						 
+						 // Update the count down every 1 second
+						 var x = setInterval(function() {
+						 
+						   // Get today's date and time
+						   var now = new Date().getTime();
+							 
+						   // Find the distance between now and the count down date
+						   var distance = countDownDate - now;
+							 
+						   // Time calculations for days, hours, minutes and seconds
+						   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+						   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+						   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+						   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+							
+						   // Output the result in an element with id="demo"
+						   document.getElementById("days").innerHTML = days + "<sup>   days</sup>";
+						   document.getElementById("hours").innerHTML = hours + "<sup>   hours</sup>";
+						   document.getElementById("minutes").innerHTML = minutes + "<sup>   minutes</sup>";
+						   document.getElementById("seconds").innerHTML = seconds + "<sup>   seconds</sup>";
+							 
+						   // If the count down is over, write some text 
+						   if (distance < 0) {
+							 clearInterval(x);
+							 document.getElementById("demo").innerHTML = "EXPIRED";
+						   }
+						 }, 1000);
+						 </script>
+						 
+						<!-- <div class="half">
+							<span>25 <sup>days</sup></span> 
+							  <span>23 <sup>hours</sup></span>
+						</div>
+						 <div class="half">
+							 <span>50 <sup>mins</sup></span>
+							  <span>33 <sup>secs</sup></span>
+						  </div>  -->
+					</div>
 
-			  			<div class="bottom-text">
-			  				<h1>Our site is launching soon.</h1>
-				  			<p>
-							Khronos is a modern and stylish website template designed to present
-							your future super awesome product or service. 
-				  			</p>			  				
-			  			</div>			  						  			   			
-
-			   	</div> <!-- /twelve --> 
+					   <div class="bottom-text">
+						   <h1><font color="#00dcec">Launching 1st August!!!</font></h1>
+						   <p><font color="#0081ff">
+						 Hey there, I am Gaurav. This website is still under construction. Till then, connect with me on social media, or scroll down to contact me.
+						</font>  
+						</p>			  				
+					   </div>		
 
 			   	<div class="scroll-icon">
 
@@ -111,136 +164,7 @@
    ================================================== -->
    <section id="info">
 
-   	<div class="info-overlay"></div>
-
-   	<div class="row">   		
-   		<div class="col-twelve tabs-wrap">
-
-   			<ul class="tabs"> 
-   				<li class="active" data-id="tab-about"><i class="icon-user"></i><span>About</span></li>
-   				<li data-id="tab-contact"><i class="icon-mail"></i><span>Contact</span></li>							
-					<li data-id="tab-subscribe"><i class="icon-newspaper"></i><span>Subscribe</span></li>				
-				</ul> <!-- /tabs -->
-
-				<div class="tab-container">
-
-					<!-- tab content - about
-   				================================================== -->
-					<div id="tab-about" class="tab-content">
-						
-					   <div class="tab-entry">
-
-					   	<div class="row tab-entry-intro">
-					   		<div class="col-twelve with-bottom-line">
-
-					   			<h1>Get To Know Us.</h1>
-
-					   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
-
-					   		</div>   		
-					   	</div> <!-- /tab-content-intro -->
-
-					   	<div class="row about-content tab-entry-content">
-					     		
-					   		<div class="about-list block-1-3 block-s-1-2 block-tab-full">
-
-						      	<div class="bgrid item">	
-
-						      		<span class="icon"><i class="icon-mobile"></i></span>            
-
-						            <div class="item-content">	
-
-						            	 <h3 class="h05">Fully Resposive</h3>
-
-							            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-						         		</p>
-						         		
-						         	</div> 	         	 
-
-									</div> <!-- /bgrid -->
-
-									<div class="bgrid item">	
-
-										<span class="icon"><i class="icon-eye"></i></span>                          
-
-						            <div class="item-content">	
-						            	<h3 class="h05">Retina Ready</h3>  
-
-							            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-						         		</p>
-
-						         		
-						            </div>	                          
-
-								   </div> <!-- /bgrid -->
-
-								   <div class="bgrid item">
-
-								   	<span class="icon"><i class="icon-pencil-ruler"></i></span>		            
-
-						            <div class="item-content">
-						            	<h3 class="h05">Stylish Design</h3>
-
-							            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-						        			</p> 
-
-						        			
-						            </div> 	            	               
-
-								   </div> <!-- /bgrid -->
-
-									<div class="bgrid item">
-
-										<span class="icon"><i class="icon-objects"></i></span>	              
-
-						            <div class="item-content">
-						            	<h3 class="h05">Clean Code</h3>
-
-							            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-						         		</p> 
-
-						         		
-						            </div>                
-
-									</div> <!-- /bgrid -->
-
-								   <div class="bgrid item">
-
-								   	<span class="icon"><i class="icon-sliders"></i></span>	            
-
-						            <div class="item-content">	
-						            	<h3 class="h05">Easy To Customize</h3>
-
-							            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-						        			</p> 
-
-						        			
-						            </div>	               
-
-								   </div> <!-- /bgrid -->
-
-								   <div class="bgrid item">
-
-								   	<span class="icon"><i class="icon-gift"></i></span>	   	           
-
-						            <div class="item-content">
-						            	 <h3 class="h05">Free of Charge</h3>
-
-							            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-						        			</p> 
-						        			
-						            </div>	               
-
-								   </div> <!-- /bgrid -->
-
-						      </div> <!-- /about-list --> 
-
-					     	</div> <!-- /row about-content -->
-					     		
-					   </div> <!-- /tab-entry -->
-
-					</div> <!-- /tab-about -->	
-
+ 
 
 					<!-- tab content contact
    				================================================== -->
@@ -251,9 +175,9 @@
 							<div class="row tab-entry-intro">
 					   		<div class="col-twelve with-bottom-line">
 
-					   			<h1>Get In Touch.</h1>
+					   			<h1><font color="white">Get In Touch.</font></h1>
 
-					   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+					   			<p class="lead"> <font color="white">Get In Touch. Use the Form Below to Contact Me! </font></p>
 
 					   		</div>   		
 					   	</div> <!-- /tab-content-intro -->
@@ -275,7 +199,7 @@
 						     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
 						               </div>                       
 					                  <div class="form-field">
-						                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+						                 	<textarea name="contactMessage" id="contactMessage" placeholder="Message" rows="10" cols="50" required=""></textarea>
 						               </div>                      
 					                 <div class="form-field">
 					                     <button class="submitForm button button-primary large">Submit</button>
@@ -356,38 +280,10 @@
 
    </section> <!-- /info -->
 
-
-   <!-- CTA Section
-   ================================================== -->
-	<section id="cta">
-
-   	<div class="row cta-wrap">
-
-   		<div class="col-twelve cta-content">  
-
-	     		<h2 class="h01"><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Styleshout Recommends Dreamhost.</a></h2>
-
-		      <p class="lead">
-		      Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
-				Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>. 
-				<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. -->	
-				</p>
-
-				<div class="action">
-			      <a class="button large" href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Sign Up Now</a>
-		      </div>		     	
-
-   		</div>
-
-   	</div> <!-- /cta-content -->
-
-   </section> <!-- /cta --> 
-
-
    <!-- footer
    ================================================== -->
-   <footer>
-
+  
+<!-- 
    	<div class="social-wrap">
    		<div class="row">
 				
@@ -410,8 +306,8 @@
 	         </ul>
 	         
 			</div> <!-- /row -->
-   	</div> <!-- /social-wrap -->
-
+   	
+<!-- 
    	<div class="footer-bottom">
 
 			<div class="footer-logo">
@@ -425,15 +321,12 @@
 
    	</div> <!-- /footer-bottom -->
 
-   	<div class="back-to-top">
+   	<!-- <div class="back-to-top">
 		 	<a href="#top" class="smoothscroll"><span>Back to Top</span></a>
-		</div>
+		</div> -->
 
-   </footer>
+ 
 
-   <div id="preloader"> 
-    	<div id="loader"></div>
-   </div> 
 
    <!-- Java Script
    ================================================== --> 
