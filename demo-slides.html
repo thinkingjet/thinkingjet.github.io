@@ -183,39 +183,27 @@
 					   	</div> <!-- /tab-content-intro -->
 
 					   	<div class="row form-wrap tab-entry-content">
-					   		<div class="col-twelve">
+					   		
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Form</title>
 
-					            <!-- form -->
-					            <form data-bss-recipient="081dcac95767d882a1d790bf189d3248" name="contactForm" id="contactForm" method="post" action="">
-					      			<fieldset>
+</head>
 
-					                  <div class="form-field">
-					 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
-					                  </div>
-					                  <div class="form-field">
-						      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
-						               </div>
-					                  <div class="form-field">
-						     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
-						               </div>                       
-					                  <div class="form-field">
-						                 	<textarea name="contactMessage" id="contactMessage" placeholder="Message" rows="10" cols="50" required=""></textarea>
-						               </div>                      
-					                 <div class="form-field">
-					                     <button class="submitForm button button-primary large">Submit</button>
-
-					                     <div id="submit-loader">
-					                        <div class="text-loader">Sending...</div>                             
-					       				      <div class="s-loader">
-													  	<div class="bounce1"></div>
-													  	<div class="bounce2"></div>
-													  	<div class="bounce3"></div>
-													</div>
-												</div><!-- submit-loader -->
-					                  </div>
-
-					      			</fieldset>
-					      		</form> <!-- /form -->
+<body>
+    <section class="contact-clean">
+        <form data-bss-recipient="081dcac95767d882a1d790bf189d3248">
+            <h2 class="text-center"> </h2>
+            <div class="mb-3"><input class="form-control" type="text" name="name" placeholder="Name" required=""></div>
+            <div class="mb-3"><input class="form-control is-invalid" type="email" name="email" placeholder="Email" required=""><small class="form-text text-danger"></small></div>
+            <div class="mb-3"><textarea class="form-control" name="message" placeholder="Message" rows="14" required="" minlength="10"></textarea></div>
+            <div class="mb-3"><button class="btn btn-primary" type="submit">send </button></div>
+        </form>
+    </section>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/smart-forms.min.js"></script>
+</body>
 
 					            <!-- contact-warning -->
 					            <div id="message-warning">            	
