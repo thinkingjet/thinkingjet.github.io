@@ -443,10 +443,10 @@ select {
 	height: 6rem;
 	padding: 1.5rem 2rem;
 	border: none;
-	border-bottom: 3px solid rgba(17, 17, 17, 0.5);
+	border-bottom: 3px solid rgba(255, 255, 255, 0.5);
 	outline: none;
 	vertical-align: middle;
-	color: #333333;
+	color: #9bebe7;
 	font-family: "roboto-regular", sans-serif;
 	font-size: 1.7rem;
 	line-height: 3rem;
@@ -470,7 +470,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-	color: #000000;
+	color: #FFFFFF;
 	border-color: #034e4a;
 }
 label, legend {
@@ -503,19 +503,19 @@ label > input[type="radio"] {
  * Style Placeholder Text  
  * ------------------------------------------------------------------- */
 ::-webkit-input-placeholder {
-	color: gray;
+	color: rgb(163, 161, 161);
 }
 :-moz-placeholder {
-	color: gray;  /* Firefox 18- */
+	color: rgb(163, 161, 161);  /* Firefox 18- */
 }
 ::-moz-placeholder {
-	color: gray;  /* Firefox 19+ */
+	color: rgb(163, 161, 161);  /* Firefox 19+ */
 }
 :-ms-input-placeholder {
-	color: gray;
+	color: rgb(163, 161, 161);
 }
 .placeholder {
-	color: gray !important;
+	color: rgb(163, 161, 161) !important;
 }
 
 /* ===================================================================
