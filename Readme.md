@@ -8,7 +8,7 @@ https://thinkingjet.me
 -------------------------------------------------------------------------------------------------------
 
 
-#SOURCES AND CREDITS:
+SOURCES AND CREDITS:
 
 I've used the following resources as listed.
 
